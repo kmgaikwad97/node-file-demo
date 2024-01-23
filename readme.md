@@ -30,6 +30,6 @@ mkdir node-file-demo
  1098  kubectl get pods
  1099  kubectl describe deployment node-app-k8 --type=LoadBalancer --port=3200
  1100  kubectl expose deployment node-app-k8 --type=LoadBalancer --port=3200
- 1101  kubectl get service
+ 1101  kubectl get service  
  1102  minikube services node-app-k8
  1103  minikube service node-app-k8
