@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app-k8
+spec:
+  ports:
+    - name : http
+      port: 8080
+      targetPort: 3200
+  selector:
+    app: node-app-k8
+  type: LoadBalancer
